@@ -9,7 +9,6 @@ interface TodoFormProps {
     onSaveTodo: (value: string, tags: string[]) => void;
     autoCompleteTags: string[]
 }
-
 const TodoForm = ({
     onSaveTodo,
     autoCompleteTags = []
@@ -22,7 +21,6 @@ const TodoForm = ({
         setInputValue("");
         setTags([]);
     }
-
     return (
         <div>
             <Input
@@ -37,5 +35,4 @@ const TodoForm = ({
         </div>
     );
 }
-
 export default TodoForm;
